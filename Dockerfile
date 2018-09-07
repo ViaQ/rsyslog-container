@@ -3,7 +3,7 @@ FROM fedora
 MAINTAINER https://github.com/ViaQ/rsyslog-container
 
 RUN dnf -y install rsyslog rsyslog-elasticsearch \
-    rsyslog-mmkubernetes rsyslog-mmjsonparse \
+    rsyslog-mmkubernetes rsyslog-mmjsonparse rsyslog-kafka \
     rsyslog-mmnormalize rsyslog-relp rsyslog-gssapi \
     && dnf clean all
 
